@@ -5,226 +5,195 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rakesh Sarma Ponukupati - Resume</title>
     <style>
-/* Resetting default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        /* Resetting default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-/* Body styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #1a1a1a;
-    color: #fff;
-}
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
 
-/* Header styles */
-header {
-    background-color: #333;
-    padding: 20px;
-}
+        /* Container styles for centering content */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-header h1 {
-    font-size: 2em;
-}
+        /* Header styles */
+        header {
+            background-color: #333;
+            padding: 20px 0;
+        }
 
-nav ul {
-    list-style-type: none;
-}
+        header h1 {
+            font-size: 2em;
+            text-align: center;
+        }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+        }
 
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s ease;
-}
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
 
-nav ul li a:hover {
-    color: #ffcc00;
-}
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
 
-/* Section styles */
-section {
-    padding: 50px;
-}
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
 
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-/* Resetting default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        /* Section styles */
+        section {
+            padding: 50px 0;
+            text-align: center;
+        }
 
-/* Body styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #1a1a1a;
-    color: #fff;
-    animation: fadeIn 1s ease;
-}
+        section h2 {
+            margin-bottom: 20px;
+        }
 
-/* Header styles */
-header {
-    background-color: #333;
-    padding: 20px;
-    animation: slideInDown 1s ease;
-}
+        section p,
+        section ul {
+            text-align: left;
+            margin: 0 auto;
+            max-width: 800px;
+        }
 
-header h1 {
-    font-size: 2em;
-}
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
 
-nav ul {
-    list-style-type: none;
-}
+        /* Image and button styles */
+        #photo {
+            text-align: center;
+            margin-top: 20px;
+        }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
+        #photo img {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+        }
 
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s ease;
-}
+        #resume button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1em;
+            border: none;
+            background-color: #ffcc00;
+            color: #333;
+            cursor: pointer;
+        }
 
-nav ul li a:hover {
-    color: #ffcc00;
-}
+        #resume button a {
+            text-decoration: none;
+            color: inherit;
+        }
 
-/* Section styles */
-section {
-    padding: 50px;
-    animation: slideInUp 1s ease;
-}
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
 
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    animation: slideInUp 1s ease;
-}
+            #photo img {
+                height: 150px;
+                width: 150px;
+            }
 
-/* Keyframe animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
+            #resume button {
+                width: 100%;
+            }
+        }
 
-@keyframes slideInDown {
-    from {
-        transform: translateY(-100%);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
+        @media (max-width: 480px) {
+            section {
+                padding: 30px 0;
+            }
 
-@keyframes slideInUp {
-    from {
-        transform: translateY(100%);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
-#photo{
-    width: 20px;
-    height: 20px;
-    border: 2px #1a1a1a solid;
-    margin-top: -50px;
-    margin-left: 1000px;
-}
-img{
-    height: 400px;
-    width: 400px;
-    border-radius: 300px;
-}
-#resume{
-    margin-left: 700px;
-}
-button{
-    margin-left: -180px;
-    color: whitesmoke;
-    background-color: #333;
-    font-size: 30px;
-    padding: 30px;
-    border-radius: 5px;
-}
-iframe{
-    width: 500px;
-    height:500px
-}
-
-</style>
+            section p,
+            section ul {
+                max-width: 100%;
+                padding: 0 20px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Rakesh Sarma Ponukupati</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#resume">Resume</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Rakesh Sarma Ponukupati</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="about">
+    <section id="about" class="container">
         <h2>About Me</h2>
-        <p>Aspiring Full Stack Engineer/Developer with the touch of AI & ML. I am enthusiastic and interested in learning things better in my way.</p><br><br><br>
+        <p>Aspiring Full Stack Engineer/Developer with the touch of AI & ML. I am enthusiastic and interested in learning things better in my way.</p>
     </section>
-    <div id="photo">
-        <img src="https://media.licdn.com/dms/image/D5603AQEojB2DMqfVpw/profile-displayphoto-shrink_400_400/0/1674226274350?e=1717027200&v=beta&t=q5SEjL0df1tuTlKDVNaU-duPCaF8rXX9xNac1qrhFsk" alt=""><br><br><br>
+
+    <div id="photo" class="container">
+        <img src="C:\Users\rakes\OneDrive\Pictures\Camera Roll\DP.jpeg" alt="Profile Picture">
     </div>
 
-    <section id="education">
+    <section id="education" class="container">
         <h2>Education</h2>
-        <p>Bachelor of Technology in Computer Science (Artificial Intelligence & Machine Learning)<br>
-        Velagapudi Ramakrishna Siddhartha Engineering College, 2022-2026</p>
+        <p>Bachelor of Technology in Computer Science (Artificial Intelligence & Machine Learning)<br>Velagapudi Ramakrishna Siddhartha Engineering College, 2022-2026</p>
     </section>
-    
 
-    <section id="experience">
+    <section id="experience" class="container">
         <h2>Experience</h2>
-        <p><a href="https://www.linkedin.com/posts/rakesh-sarma-ponukupati-6b3512259_this-is-my-web-development-internship-certificate-activity-7142493019202596865-ypnM?utm_source=share&utm_medium=member_desktop" target="_blank">Web Development Virtual Intern</a><br>
-        Online | Nov 2023 - Dec 2023</p>
+        <p><a href="https://www.linkedin.com/posts/rakesh-sarma-ponukupati-6b3512259_this-is-my-web-development-internship-certificate-activity-7142493019202596865-ypnM?utm_source=share&utm_medium=member_desktop" target="_blank">Web Development Virtual Intern</a>------------------------------------------> Online | Nov 2023 - Dec 2023</p>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="container">
         <h2>Projects</h2>
         <ul>
-            <li><a href="https://www.linkedin.com/posts/rakesh-sarma-ponukupati-6b3512259_htmlcssjavascript-frontenddevelopment-activity-7172612566026846208-bdD_?utm_source=share&utm_medium=member_desktop" target="_blank">CodePen </a>- A clone of the CodePen website, crafted exclusively with HTML, CSS, and JavaScript.</li>
-            <li><a href="https://www.linkedin.com/posts/rakesh-sarma-ponukupati-6b3512259_ive-just-launched-a-weather-forecasting-activity-7177252462964191232-woVp?utm_source=share&utm_medium=member_desktop" target="_blank">WeatherApp </a>- A weather real-time updating website that harnesses the power of a weather API.</li>
-            <li><a href="https://www.linkedin.com/posts/rakesh-sarma-ponukupati-6b3512259_htmlcssjavascript-frontenddevelopment-activity-7174400390443008001-fJr5?utm_source=share&utm_medium=member_desktop" target="_blank">Password Generator </a>- Generation of robust, random passwords tailored to user specifications.</li>
-            <li><a href="https://www.linkedin.com/posts/rakesh-sarma-ponukupati-6b3512259_frontenddevelopment-webdevelopment-htmlcssjavascript-activity-7156981353882738688-KBo0?utm_source=share&utm_medium=member_desktop" target="_blank">Login Page </a>- Authenticate users and grant them access to a protected web page using a secret code.</li>
-            <li><a href="https://www.linkedin.com/posts/rakesh-sarma-ponukupati-6b3512259_frontenddevelopment-webdevelopment-htmlcssjavascript-activity-7156560587932540928-piMg?utm_source=share&utm_medium=member_desktop" target="_blank">Calculator </a>- A calculator website created using HTML, CSS, and JavaScript.</li>
+            <li><a href="https://www.linkedin.com/posts/rakesh-sarma-ponukupati-6b3512259_machinelearning-datascience-mlprojects-activity-7200094058076098560-w0Zl?utm_source=share&utm_medium=member_desktop" target="_blank"> Apple Quality Predictor</a> - A calculator website created using HTML, CSS, and JavaScript. Developed an advanced machine learning model to predict apple quality based on essential attributes—size, weight and predict its sweetness, crunchiness, juiciness, ripeness, acidity and finally the quality of an apple.</li><br>
+            <li><a href="https://www.linkedin.com/posts/rakesh-sarma-ponukupati-6b3512259_frontenddevelopment-webdevelopment-htmlcssjavascript-activity-7156560587932540928-piMg?utm_source=share&utm_medium=member_desktop" target="_blank">Clock</a> -Python project featuring a multi-alarm system and a stopwatch for ultimate time management!</li><br>
+            <li><a href="https://github.com/Rakesh-005/QR-Codes" target="_blank">QR Code Integration and PDF Generation</a> - Developed a system to generate QR codes, perfectly align them on specified image positions, and compile the modified images into a comprehensive PDF file.</li><br>
+            <li><a href="https://github.com/Rakesh-005/File-Management-Automation" target="_blank"> File Management Automation</a> - Created a script to resize and duplicate files, categorizing them into 'Large', 'Medium', and 'Small' based on predefined criteria, enhancing organizational efficiency.</li><br>
+            <li><a href="https://www.linkedin.com/posts/rakesh-sarma-ponukupati-6b3512259_htmlcssjavascript-frontenddevelopment-activity-7172612566026846208-bdD_?utm_source=share&utm_medium=member_desktop" target="_blank">CodePen</a> - A clone of the CodePen website, crafted exclusively with HTML, CSS, and JavaScript.</li><br>
+            <li><a href="https://www.linkedin.com/posts/rakesh-sarma-ponukupati-6b3512259_ive-just-launched-a-weather-forecasting-activity-7177252462964191232-woVp?utm_source=share&utm_medium=member_desktop" target="_blank">WeatherApp</a> - A weather real-time updating website that harnesses the power of a weather API.</li><br>
+            <li><a href="https://www.linkedin.com/posts/rakesh-sarma-ponukupati-6b3512259_htmlcssjavascript-frontenddevelopment-activity-7174400390443008001-fJr5?utm_source=share&utm_medium=member_desktop" target="_blank">Password Generator</a> - Generation of robust, random passwords tailored to user specifications.</li><br>
+            <li><a href="https://www.linkedin.com/posts/rakesh-sarma-ponukupati-6b3512259_frontenddevelopment-webdevelopment-htmlcssjavascript-activity-7156981353882738688-KBo0?utm_source=share&utm_medium=member_desktop" target="_blank">Login Page</a> - Authenticate users and grant them access to a protected web page using a secret code.</li><br>
+            <li><a href="https://www.linkedin.com/posts/rakesh-sarma-ponukupati-6b3512259_frontenddevelopment-webdevelopment-htmlcssjavascript-activity-7156560587932540928-piMg?utm_source=share&utm_medium=member_desktop" target="_blank">Calculator</a> - A calculator website created using HTML, CSS, and JavaScript.</li><br>
+            <li><a href="https://www.linkedin.com/posts/rakesh-sarma-ponukupati-6b3512259_frontenddevelopment-webdevelopment-htmlcssjavascript-activity-7156560587932540928-piMg?utm_source=share&utm_medium=member_desktop" target="_blank">CurricuBot</a> - A smart and friendly chatbot that can answer any questions related to our course or AIML branch curriculum.</li><br>
+            
         </ul>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="container">
         <h2>Contact</h2>
         <p>
             Address: 41-3-54, Bhiyyam Kotla Bazaar, Krishnalanka, Vijayawada<br>
@@ -237,13 +206,15 @@ iframe{
         </p>
     </section>
 
-    <section id="resume">
-        <h2>Resume</h2><br>
-        <button><a class="iframeLink" href="https://drive.google.com/file/d/1I_9iJnr8uWfood3xAEbBSKq2G7WO9huk/view?usp=sharing">Download my resume from here</a></button>
+    <section id="resume" class="container">
+        <h2>Resume</h2>
+        <button><a href="https://drive.google.com/file/d/1I_9iJnr8uWfood3xAEbBSKq2G7WO9huk/view?usp=sharing">Download Resume</a></button>
     </section>
 
     <footer>
-        <p>Ideated and Experimented by Rakesh</p>
+        <div class="container">
+            <p>&copy; 2024 Rakesh Sarma Ponukupati</p>
+        </div>
     </footer>
 </body>
 </html>
